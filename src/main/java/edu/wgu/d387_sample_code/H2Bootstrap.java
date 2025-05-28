@@ -1,10 +1,12 @@
 package edu.wgu.d387_sample_code;
 
 import edu.wgu.d387_sample_code.entity.RoomEntity;
+import edu.wgu.d387_sample_code.locale.DisplayMessages;
 import edu.wgu.d387_sample_code.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import edu.wgu.d387_sample_code.locale.DisplayMessages;
 
 
 
@@ -41,6 +43,7 @@ public class H2Bootstrap implements CommandLineRunner {
 		for(RoomEntity room : itr) {
 			System.out.println(room.getRoomNumber());
 		}
+		DisplayMessages.run();
 	}
 
 }
