@@ -43,7 +43,6 @@ public class H2Bootstrap implements CommandLineRunner {
 		for(RoomEntity room : itr) {
 			System.out.println(room.getRoomNumber());
 		}
-		DisplayMessages.run();
 	}
 
 }
