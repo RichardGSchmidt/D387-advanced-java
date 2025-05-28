@@ -23,7 +23,7 @@ b.  Display the welcome message in both English and French by applying the resou
 
 2.  Modify the front end to display the price for a reservation in currency rates for U.S. dollars ($), Canadian dollars (C$), and euros (€) on different lines.
 
-Note: It is not necessary to convert the values of the prices.
+>Task B2 complete. Displayed currency prices in all three currencies on different lines (app.component.html lines 76-79) and imported the math module to do basic conversions (app.component.ts line 92).
 
 3.  Display the time for an online live presentation held at the Landon Hotel by doing the following:
 
