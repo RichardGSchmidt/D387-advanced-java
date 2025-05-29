@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {HttpClient, HttpResponse,HttpHeaders} from "@angular/common/http";
+import {Location, LocationStrategy} from "@angular/common";
 import { Observable } from 'rxjs';
 import {map} from "rxjs/operators";
 
@@ -15,9 +16,16 @@ import {map} from "rxjs/operators";
 })
 export class AppComponent implements OnInit{
 
-  constructor(private httpClient:HttpClient){}
+  constructor(private httpClient:HttpClient, private location: Location, private locationStrategy: LocationStrategy){}
 
+  //if this was being deployed to a production server it would also likely use static endpoints here
   private baseURL:string='http://localhost:8080';
+
+  //This one works only when logged into localhost:8080
+  //private baseURL:string = window.location.origin;
+
+  //this doesn't work
+  //private baseURL:string=this.location.path();
 
   private getUrl:string = this.baseURL + '/room/reservation/v1/';
   private postUrl:string = this.baseURL + '/room/reservation/v1';
