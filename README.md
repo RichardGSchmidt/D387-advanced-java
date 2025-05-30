@@ -17,7 +17,7 @@
 
 #### b.  Display the welcome message in both English and French by applying the resource bundles using a different thread for each language.
 
->Task B1 Complete. The messages now display properly using multithreading.  Displayed the message using changes to app.component.html lines 8-11, app.component.ts lines 30, 48-54, 92-94.  Simplified and fixed DisplayMessages.java and WelcomeController.java and removed the call in the bootstrap.  Rebuilt Maven to update application running on 8080.
+>Task B1 Complete. The messages display properly using multithreading.  Displayed the message using changes to app.component.html, app.component.ts alongside DisplayMessages.java and WelcomeController.java.
 
 ### 2.  Modify the front end to display the price for a reservation in currency rates for U.S. dollars ($), Canadian dollars (C$), and euros (€) on different lines.
 
@@ -27,13 +27,17 @@
 
 #### a.  Write a Java method to convert times between eastern time (ET), mountain time (MT), and coordinated universal time (UTC) zones.
 
+> Completed as the ConvertTimes method contained in DisplayTimes.java
+
 #### b.  Use the time zone conversion method from part B3a to display a message stating the time in all three times zones in hours and minutes for an online, live presentation held at the Landon Hotel. The times should be displayed as ET, MT, and UTC.
+
+> Completed by using DisplayTimes.Java along with TimeController and changes to app.component.ts and app.component.html
 
 ## C.  Explain how you would deploy the Spring application with a Java back end and an Angular front end to cloud services and create a Dockerfile using the attached supporting document "How to Create a Docker Account" by doing the following:
 
 ### 1.  Build the Dockerfile to create a single image that includes all code, including modifications made in parts B1 to B3. Commit and push the final Dockerfile to GitLab.
 
->Dockerfile created
+>Dockerfile created that creates a single image with all previous code.
 
 ### 2.  Test the Dockerfile by doing the following:
 
